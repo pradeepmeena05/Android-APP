@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/unit"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Unit Converter"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp">
+
+        <!-- First ImageView -->
+        <ImageView
+            android:id="@+id/R1btn1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/bmi"
+               android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/R1text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R1btn1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="3dp"
+            android:text="BMI"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/R1btn2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/age"
+            android:backgroundTint="@color/white"/>
+
+        <!-- Second TextView -->
+        <TextView
+            android:id="@+id/R1text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R1btn2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Age" />
+
+        <!-- Third ImageView -->
+        <ImageView
+            android:id="@+id/R1btn3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/thermometer"
+            android:backgroundTint="@color/white"/>
+
+        <!-- Third TextView -->
+        <TextView
+            android:id="@+id/R1text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/R1btn3"
+            android:layout_alignStart="@+id/R1btn3"
+            android:layout_marginStart="-16dp"
+            android:layout_marginTop="3dp"
+            android:text="Temperature"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/R2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/R2btn1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/size"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R2btn1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="63dp"
+
+            android:layout_marginTop="3dp"
+            android:text="Length"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/R2btn2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/load"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R2btn2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Mass" />
+
+        <ImageView
+            android:id="@+id/R2btn3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/exchange"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R2btn3"
+            android:layout_alignEnd="@+id/R2btn3"
+            android:layout_marginTop="3dp"
+
+            android:layout_marginEnd="-4dp"
+            android:text="Currency"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/R3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/R3btn1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/area"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/R3btn1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+
+            android:layout_marginTop="3dp"
+            android:text="Area"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/R3btn2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/hourglass"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R3btn2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Time" />
+
+        <ImageView
+            android:id="@+id/R3btn3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/number"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R3btn3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="40dp"
+            android:text="NumberSystem"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/R4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/R4btn1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/speedometer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R4btn1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+
+            android:layout_marginTop="3dp"
+            android:text="Speed"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/R4btn2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/discount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R4btn2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="58dp"
+            android:textColor="@color/white"
+            android:text="Discount" />
+
+        <ImageView
+            android:id="@+id/R4btn3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/volume"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R4btn3"
+            android:layout_alignEnd="@+id/R4btn3"
+            android:layout_marginTop="3dp"
+            android:text="Volume"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
