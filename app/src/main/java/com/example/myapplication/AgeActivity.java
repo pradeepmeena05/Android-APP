@@ -179,7 +179,7 @@ public class AgeActivity extends AppCompatActivity {
                 if (Year_Val1 != 0 && Year_Val2 != 0) {
                     int Total_Year = Math.abs(Year_Val1 - Year_Val2);
                     Text2.setText("Total Year's" + " " + Total_Year);
-                    Text3.setText("Total Week's" + " " + Total_Year * 52.143);
+                    Text3.setText("Total Week's" + " " + Total_Year * 52);
                     Text4.setText("Total Day's" + " " + (Total_Year * 365));
                     Text5.setText("Total Hour's" + " " + (Total_Year * 8760));
                     Text6.setText("Total Mintu's" + " " + (Total_Year * 525600));
