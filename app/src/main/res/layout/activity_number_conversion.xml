@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Number Converter"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/valueInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter value"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/unitFromSpinner"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        />
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Convert to:"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/unitToSpinner"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Convert"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="All Clear"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:textColor="#D61E1E"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"/>
+
+</LinearLayout>

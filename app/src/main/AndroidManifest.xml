@@ -12,15 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-        <activity
-            android:name=".AgeActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -30,7 +22,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".VolumeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AgeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AreaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TemperatureActivity"
+            android:exported="true" />
+        <activity
+            android:name=".numberConversion"
+            android:exported="true" />
+        <activity
+            android:name=".LengthActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BmiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SpeedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TimeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DiscountActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

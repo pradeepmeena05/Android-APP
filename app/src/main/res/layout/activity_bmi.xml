@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#D06A6A"
+    tools:context=".BmiActivity">
+
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="100dp"
+        android:layout_height="409dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Age"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Gender"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:text="Height"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Weight"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L2"
+        android:layout_width="200dp"
+        android:layout_height="409dp"
+        android:gravity="center"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/borderedit"
+            android:digits="0123456789"
+            android:hint="Age: 2-120"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:text="Male"
+
+            android:textSize="25sp"
+           android:layout_gravity="center_horizontal" />
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:text="Female"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borderedit"
+            android:gravity="center"
+            android:hint="Cm"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borderedit"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:hint="Kg"
+            android:inputType="number"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+     <Button
+         android:id="@+id/bmi"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="250dp"
+         android:text="calculate"/>
+
+      <TextView
+          android:id="@+id/result"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+             android:textSize="30sp"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:layout_centerHorizontal="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="150dp" />
+
+
+
+
+
+</RelativeLayout>
