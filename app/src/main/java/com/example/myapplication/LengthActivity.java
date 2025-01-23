@@ -91,76 +91,76 @@ public class LengthActivity extends AppCompatActivity {
                 else if(spinner1Text=="Kilometre")
                 {
                     result = checkForKm( inputVal, spinner2Text);
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
                 }
                 else if(spinner1Text=="Metre")
                 {
                     result = checkForMetre( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Centimetre")
                 {
                     result = checkForCentimetre( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Milimetre")
                 {
                     result = checkForMillimetre( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Micrometre")
                 {
                     result = checkForMicrometre( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Nanoometre")
                 {
                     result = checkForNanometre( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Mile")
                 {
                     result = checkForMile( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Yard")
                 {
                     result = checkForYard( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Foot")
                 {
                     result = checkForFoot( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Inch")
                 {
                     result = checkForInch( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
                 else if(spinner1Text=="Decimetre")
                 {
                     result = checkForDecimetre( inputVal, spinner2Text);
                     result = Math.round(result * 1e6) / 1e6;
-                    resultText.setText(String.valueOf(result + " " + spinner2Text));
+                    resultText.setText(result + " " + spinner2Text);
 
                 }
 
