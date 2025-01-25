@@ -21,12 +21,11 @@ public class Splash_Screen_Activity extends AppCompatActivity {
             public void run() {
                 startActivity(intent);
 
-
                 finish();
             }
 
 
-        },5000);
+        },4000);
 
     }
 }
