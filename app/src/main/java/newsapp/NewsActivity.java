@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.R;
-
 import java.util.ArrayList;
 
 public class NewsActivity extends AppCompatActivity {
@@ -20,11 +18,6 @@ public class NewsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.newsrecyclerview);
-
-        recyclerView = findViewById(R.id.Rview);
-
-
         new FetchNewsTask().execute();
     }
 
