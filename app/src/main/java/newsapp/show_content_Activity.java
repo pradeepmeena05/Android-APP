@@ -22,6 +22,7 @@ public class show_content_Activity extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
 
 
+
         Intent intent=getIntent();
 
         String url=intent.getStringExtra("url");

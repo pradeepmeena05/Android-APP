@@ -1,26 +1,40 @@
 package gridview;
 
 import android.os.Bundle;
+import android.widget.GridView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.myapplication.R;
+
+import java.util.ArrayList;
 
 public class GridViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_grid_view);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        GridView GridId=findViewById(R.id.GridId);
+
+        ArrayList<GridData>list=new ArrayList<>();
+
+        list.add(new GridData("Card1"));
+        list.add(new GridData("Card2"));
+        list.add(new GridData("Card3"));
+        list.add(new GridData("Card4"));
+        list.add(new GridData("Card5"));
+        list.add(new GridData("Card6"));
+        list.add(new GridData("Card7"));
+        list.add(new GridData("Card8"));
+
+       GridAdapter gridAdapter=new GridAdapter(this,list);
+
+       GridId.setAdapter(gridAdapter);
+
+
+
     }
 }
