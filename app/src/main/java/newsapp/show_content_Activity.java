@@ -23,6 +23,7 @@ public class show_content_Activity extends AppCompatActivity {
 
 
 
+
         Intent intent=getIntent();
 
         String url=intent.getStringExtra("url");
