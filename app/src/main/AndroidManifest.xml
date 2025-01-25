@@ -15,7 +15,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name="splashscreen.Splash_Screen_Activity"
+            android:name="tablelayout.Table_Layout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="splashscreen.AppMainActivity"
-            android:exported="false" />
 <!--        <activity-->
-<!--            android:name="gridview.GridViewActivity"-->
+<!--            android:name="framelayout.FrameActivity"-->
 <!--            android:exported="true">-->
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
@@ -35,9 +32,6 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
 <!--        </activity>-->
-<!--        <activity-->
-<!--            android:name="newsapp.show_content_Activity"-->
-<!--            android:exported="false" />-->
     </application>
 
 </manifest>
