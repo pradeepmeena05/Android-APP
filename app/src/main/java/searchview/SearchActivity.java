@@ -48,9 +48,9 @@ public class SearchActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if (list.contains(newText)) {
-                    adapter.getFilter().filter(newText);
-                }
+//                if (list.contains(newText)) {
+//                    adapter.getFilter().filter(newText);
+//                }
                 return false;
             }
 
