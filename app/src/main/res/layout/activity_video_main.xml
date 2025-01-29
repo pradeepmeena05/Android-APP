@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context="videoview.VideoMainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is Video View "
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"/>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          app:cardMaxElevation="7dp"
+          app:cardElevation="6dp"
+          app:cardPreventCornerOverlap="true"
+          app:cardCornerRadius="5dp"
+          app:cardUseCompatPadding="true"
+           >
+          <VideoView
+              android:id="@+id/videoview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              />
+
+
+
+
+
+
+      </androidx.cardview.widget.CardView>
+</LinearLayout>
