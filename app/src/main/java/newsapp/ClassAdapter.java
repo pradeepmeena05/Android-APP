@@ -99,7 +99,7 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.Viewholder> 
         private final TextView textViewContent;
         private final ImageView image;
 
-       private  final TextView Content_Link;
+
         private  final CardView cardId;
 
         public Viewholder(@NonNull View itemView) {
@@ -108,7 +108,7 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.Viewholder> 
             image = itemView.findViewById(R.id.image);
             textViewTitle = itemView.findViewById(R.id.TextView1);
             textViewContent = itemView.findViewById(R.id.TextView2);
-          Content_Link=itemView.findViewById(R.id.cardId);
+
             cardId=itemView.findViewById(R.id.cardId);
         }
     }
