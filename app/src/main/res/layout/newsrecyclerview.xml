@@ -6,7 +6,7 @@
     tools:context="newsapp.NewsActivity">
     
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Rview"
+        android:id="@+id/rview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
