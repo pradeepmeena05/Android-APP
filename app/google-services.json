@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "767308623550",
+    "project_id": "fisrtproject-c111e",
+    "storage_bucket": "fisrtproject-c111e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767308623550:android:33bfbb97e0fcd86e6cf8ef",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNF8My4tIWOp_aUOSq7ysOTYot4ljOIfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
